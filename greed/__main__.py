@@ -23,7 +23,7 @@ CELL_SIZE = 15
 FONT_SIZE = 15
 COLS = 60
 ROWS = 40
-CAPTION = "Change this text"
+CAPTION = "Greed game"
 WHITE = Color(255, 255, 255)
 GEMS_ROCKS = 40
 
@@ -53,9 +53,10 @@ def main():
     robot.set_position(position)
     cast.add_actor("robots", robot)
 
+    # create the gems and rocks
     for n in range(GEMS_ROCKS):
 
-        text = chr(random.randint(33, 126))
+        text = "*"
 
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
