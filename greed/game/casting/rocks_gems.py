@@ -4,17 +4,17 @@ from game.shared.point import Point
 
 class Objects(Actor):
     """
-    An item of cultural or historical interest. 
+    Are items (gems and rocks) if the robot touch a rock lose a point, if is gem win one point. 
 
-    The responsibility of an Artifact is to provide a message about itself.
+    The responsibility of Objects is to keep the score of gain or lose points.
 
     Attributes:
-        _message (string): A short description about the artifact.
+        _score (int): tracking of the score.
     """
 
     def __init__(self):
         super().__init__()
-        self._message = ""
+        self._score = 0
 
     def get_message(self):
         """Gets the artifact's message.
