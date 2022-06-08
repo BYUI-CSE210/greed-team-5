@@ -1,5 +1,6 @@
 import os
 import random
+from pyparsing import White
 
 from raylib import DEFAULT
 
@@ -33,13 +34,20 @@ def main():
     # create the cast
     cast = Cast()
 
-    # create the banner
+    # create the banners
     banner = Actor()
     banner.set_text("")
     banner.set_font_size(FONT_SIZE)
     banner.set_color(WHITE)
     banner.set_position(Point(CELL_SIZE, 0))
     cast.add_actor("banners", banner)
+
+    banner1 = Actor()
+    banner1.set_text("")
+    banner1.set_font_size(FONT_SIZE)
+    banner1.set_color(WHITE)
+    banner1.set_position(Point(CELL_SIZE, 0))
+    cast.add_actor("banners", banner1)
 
     # create the robot
     x = int(MAX_X / 2)
