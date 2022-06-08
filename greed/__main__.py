@@ -54,9 +54,12 @@ def main():
     cast.add_actor("robots", robot)
 
     # create the gems and rocks
+    score = 0
     for n in range(GEMS_ROCKS):
 
         text = "*"
+        points = 1
+        score += points
 
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
@@ -74,6 +77,7 @@ def main():
         artifact.set_font_size(FONT_SIZE)
         artifact.set_color(color)
         artifact.set_position(position)
+        artifact.set_score(score)
 
         cast.add_actor("artifacts", artifact)
 
