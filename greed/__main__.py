@@ -53,7 +53,7 @@ def main():
     x = int(MAX_X / 2)
     y = int(MAX_Y / 2)
     #start_position_y = int(MAX_Y * 0.97)
-    position = Point(x , y)
+    position = Point(x, y)
     #position_robot = Point(x , start_position_y)
 
     robot = Actor()
@@ -61,7 +61,7 @@ def main():
     robot.set_font_size(FONT_SIZE)
     robot.set_color(WHITE)
     robot.set_position(position)
-    #robot.set_position(position_robot)
+    # robot.set_position(position_robot)
     cast.add_actor("robots", robot)
 
     # create the gems and rocks

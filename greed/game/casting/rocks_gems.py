@@ -17,17 +17,18 @@ class Objects(Actor):
         self._score = 0
 
     def get_score(self):
-        """Gets the artifact's message.
+        """Gets the points.
 
         Returns:
-            string: The message.
+            int: The points.
         """
         return self._score
 
     def set_score(self, points):
-        """Updates the message to the given one.
+        """Updates the points gained or lose every the robot touch
+        one object
 
         Args:
-            message (string): The given message.
+            points (int): The given points.
         """
         self._score = points
